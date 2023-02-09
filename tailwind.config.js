@@ -10,7 +10,22 @@ module.exports = {
   ],
   darkMode: "class", 
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        '3xl': '0 0 3px 3px rgb(0 0 0 / 3%)',
+      },
+      colors: {
+        dark: {
+          element: "#2B3945",
+          background: "#202C37",
+          lightText: "#111517",
+          lightInput: "#858585",
+        },
+        light: {
+          background: "#FAFAFA",
+        },
+      }
+    },
   },
   plugins: [],
 }
