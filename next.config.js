@@ -27,7 +27,7 @@ module.exports = (phase) => {
     HOST_KEY: (() => {
       if (isDev) return 'http://localhost:3000/api'
       if (isProd) {
-        return 'https://vercel.com/safwanazman/rest-countries/api'
+        return 'https://rest-countries-one-orcin.vercel.app/api'
       }
       if (isStaging) return ''
       return 'RESTURL_SPEAKERS:not (isDev,isProd && !isStaging,isProd && isStaging)'
