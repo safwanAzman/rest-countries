@@ -27,7 +27,7 @@ module.exports = (phase) => {
     HOST_KEY: (() => {
       if (isDev) return 'http://localhost:3000/api'
       if (isProd) {
-        return 'https://main--stupendous-kitten-0e1962.netlify.app/api'
+        return 'https://vercel.com/safwanazman/rest-countries'
       }
       if (isStaging) return ''
       return 'RESTURL_SPEAKERS:not (isDev,isProd && !isStaging,isProd && isStaging)'
