@@ -1,3 +1,35 @@
+@font-face {
+    font-family: UbuntuBold;
+    src: url('../assets/fonts/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+    font-family: UbuntuRegular;
+    src: url('../assets/fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+    font-family: UbuntuMedium;
+    src: url('../assets/fonts/Ubuntu-Medium.ttf');
+}
+
+@font-face {
+    font-family: UbuntuLight;
+    src: url('../assets/fonts/Ubuntu-Light.ttf');
+}
+
+.myFontRegular{
+    font-family: UbuntuRegular;
+}
+.myFontMedium{
+    font-family: UbuntuMedium;
+}
+.myFontBold{
+    font-family: UbuntuBold;
+}
+.myFontLight{
+    font-family: UbuntuLight;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
