@@ -44,7 +44,7 @@ const ListCountries = ({ data }) => {
             <>
             <div className="grid grid-cols-12 gap-6 py-10 lg:py-20 z-0">
                 <div className="col-span-12">
-                    <BackBtn as='/' rel="preload"  href='/'/>
+                    <BackBtn as='/' href='/'/>
                 </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20 items-start">
@@ -86,7 +86,7 @@ const ListCountries = ({ data }) => {
                                         }, 1000);
                                     }}
                                     href={`/listcountries/${item.alpha3Code}`}
-                                    as={`/listcountries/${item.alpha3Code}`} rel="preload"
+                                    as={`/listcountries/${item.alpha3Code}`}
                                     key={index} className="bg-white px-6 py-[0.28rem] shadow-3xl flext items-center dark:bg-dark-element mb-2 mr-2 rounded-sm hover:scale-105 animate__animated animate__slideInUp " >
                                     <motion.h1 
                                         initial={{opacity: 0, y:-50}}

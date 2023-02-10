@@ -7,7 +7,7 @@ import {motion} from "framer-motion";
 const Card =  ({src,href ,flagTitle ,flagRegion,flagPopulation,flagCapital}) => {
     return (
         <div className="bg-white dark:bg-dark-element shadow-3xl rounded-lg cursor-pointer  transition hover:scale-110">
-        <Link as={href} rel="preload" href={href} >
+        <Link as={href} href={href} >
             <motion.div 
                 initial={{opacity: 0, x:-20}}
                 animate={{opacity: 1, x: 0}}

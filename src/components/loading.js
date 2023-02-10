@@ -27,7 +27,9 @@ const Loading = () => {
                 className="w-96"
                 ref={containerRef}
             />
-            <p className="pt-2 pl-4 text-lg myFontLight">Searching <span className="animate-pulse">...</span></p>
+            <main>
+                <p className="pt-2 pl-4 text-lg myFontLight">Searching <span className="animate-pulse">...</span></p>
+            </main>
         </div>
     );
 };

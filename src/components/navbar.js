@@ -15,7 +15,7 @@ const Navbar =  () => {
     
 
     return (
-        <div className="bg-white dark:bg-dark-element shadow-lg flex justify-between items-center py-8 px-4 md:px-10 xl:px-20  sticky top-0 z-50">
+        <header className="bg-white dark:bg-dark-element shadow-lg flex justify-between items-center py-8 px-4 md:px-10 xl:px-20  sticky top-0 z-50">
             <h1 className="font-bold text-lg lg:text-2xl myFontBold">Where in the world ?</h1>
             {currentTheme ==="dark" ?
                 <button onClick={() => setTheme('light')} className="myFontRegular text-base flex items-center space-x-2">
@@ -32,7 +32,7 @@ const Navbar =  () => {
                     Dark Mode
                 </button>
             }
-        </div>
+        </header>
     );
 }
 
