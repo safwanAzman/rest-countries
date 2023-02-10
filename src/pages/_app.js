@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import { ThemeProvider } from "next-themes";
 import Navbar from '@/components/navbar';
+import Filtercountries from '@/pages/filtercountries';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -8,7 +9,8 @@ export default function App({ Component, pageProps }) {
       <Navbar/>
       <div className="container mx-auto">
         <div className="px-6">
-          <Component {...pageProps} />
+          <Filtercountries/>
+          {/* <Component {...pageProps} /> */}
         </div>
       </div>
       <footer className="fixed bottom-0 w-full p-1 bg-black ">
