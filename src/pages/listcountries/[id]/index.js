@@ -44,7 +44,7 @@ const ListCountries = ({ data }) => {
             <>
             <div className="grid grid-cols-12 gap-6 py-10 lg:py-20 z-0">
                 <div className="col-span-12">
-                    <BackBtn href='/'/>
+                    <BackBtn as='/' rel="preload"  href='/'/>
                 </div>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20 items-start">
@@ -62,16 +62,16 @@ const ListCountries = ({ data }) => {
                     <h1 className="myFontBold text-4xl xl:text-5xl">{data.name}</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
                         <div className="space-y-6 text-lg">
-                            <h6 className="myFontMedium">Native Name : <span className="myFontLight">{data.name}</span></h6>
-                            <h6 className="myFontMedium">Population : <span className="myFontLight">{data.population.toLocaleString()}</span></h6>
-                            <h6 className="myFontMedium">Region : <span className="myFontLight">{data.region}</span></h6>
-                            <h6 className="myFontMedium">Sub Region : <span className="myFontLight">{data.subregion}</span></h6>
-                            <h6 className="myFontMedium">Capital : <span className="myFontLight">{data.capital}</span></h6>
+                            <h1 className="myFontMedium">Native Name : <span className="myFontLight">{data.name}</span></h1>
+                            <h1 className="myFontMedium">Population : <span className="myFontLight">{data.population.toLocaleString()}</span></h1>
+                            <h1 className="myFontMedium">Region : <span className="myFontLight">{data.region}</span></h1>
+                            <h1 className="myFontMedium">Sub Region : <span className="myFontLight">{data.subregion}</span></h1>
+                            <h1 className="myFontMedium">Capital : <span className="myFontLight">{data.capital}</span></h1>
                         </div>
                         <div className="space-y-6 text-lg">
-                            <h6 className="myFontMedium">Top Level Domain : <span className="myFontLight">{data.topLevelDomain}</span></h6>
-                            <h6 className="myFontMedium">Currencies : <span className="myFontLight">{data.currencies[0].code}</span></h6>
-                            <h6 className="myFontMedium">Languages : <span className="myFontLight">{data.languages[0].name}</span></h6>
+                            <h1 className="myFontMedium">Top Level Domain : <span className="myFontLight">{data.topLevelDomain}</span></h1>
+                            <h1 className="myFontMedium">Currencies : <span className="myFontLight">{data.currencies[0].code}</span></h1>
+                            <h1 className="myFontMedium">Languages : <span className="myFontLight">{data.languages[0].name}</span></h1>
                         </div>
                     </div>
                     <div className="flex flex-wrap  mb-20">
@@ -86,6 +86,7 @@ const ListCountries = ({ data }) => {
                                         }, 1000);
                                     }}
                                     href={`/listcountries/${item.alpha3Code}`}
+                                    as={`/listcountries/${item.alpha3Code}`} rel="preload"
                                     key={index} className="bg-white px-6 py-[0.28rem] shadow-3xl flext items-center dark:bg-dark-element mb-2 mr-2 rounded-sm hover:scale-105 animate__animated animate__slideInUp " >
                                     <motion.h1 
                                         initial={{opacity: 0, y:-50}}

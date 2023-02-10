@@ -33,7 +33,6 @@ const Dropdown =  ({onClick,value,regions}) => {
                             setItems('All')
                             onClick({ target: { value: 'All' } });
                         }} 
-                        value='All'
                         className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer">
                         All
                     </li>
@@ -45,7 +44,6 @@ const Dropdown =  ({onClick,value,regions}) => {
                             setItems(region)
                             onClick({ target: { value: region } });
                         }} 
-                        value={region}
                         className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer">
                         {region}
                     </li>

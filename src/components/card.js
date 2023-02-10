@@ -7,7 +7,7 @@ import {motion} from "framer-motion";
 const Card =  ({src,href ,flagTitle ,flagRegion,flagPopulation,flagCapital}) => {
     return (
         <div className="bg-white dark:bg-dark-element shadow-3xl rounded-lg cursor-pointer  transition hover:scale-110">
-        <Link href={href} >
+        <Link as={href} rel="preload" href={href} >
             <motion.div 
                 initial={{opacity: 0, x:-20}}
                 animate={{opacity: 1, x: 0}}
@@ -35,9 +35,9 @@ const Card =  ({src,href ,flagTitle ,flagRegion,flagPopulation,flagCapital}) => 
                     animate={{opacity: 1, x:0}}
                     transition={{duration: 0.5, ease: "easeInOut",delay:1.2}}
                 >
-                    <h6 className="text-base myFontRegular"><span className="font-bold myFontMedium">Population:</span> {flagPopulation.toLocaleString()}</h6>
-                    <h6 className="text-base myFontRegular"><span className="font-bold myFontMedium">Region:</span> {flagRegion}</h6>
-                    <h6 className="text-base myFontRegular"><span className="font-bold myFontMedium">Capital:</span>{flagCapital}</h6>
+                    <h1 className="text-base myFontRegular"><span className="font-bold myFontMedium">Population:</span>{flagPopulation.toLocaleString()}</h1>
+                    <h1 className="text-base myFontRegular"><span className="font-bold myFontMedium">Region:</span> {flagRegion}</h1>
+                    <h1 className="text-base myFontRegular"><span className="font-bold myFontMedium">Capital:</span>{flagCapital}</h1>
                 </motion.div>
             </div>
         </Link>
