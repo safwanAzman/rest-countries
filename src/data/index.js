@@ -528,6 +528,13 @@ export const data = [
         "svg": "https://flagcdn.com/aq.svg",
         "png": "https://flagcdn.com/w320/aq.png"
       },
+      "currencies": [
+        {
+          "code": "",
+          "name": "",
+          "symbol": ""
+        }
+      ],
       "languages": [
         {
           "iso639_1": "en",
