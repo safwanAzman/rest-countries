@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import Allcountries from './allcountries';
+import Filtercountries from '@/pages/filtercountries';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Allcountries/>
+        <Filtercountries/>
       </div>
     </>
   )
