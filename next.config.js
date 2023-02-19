@@ -32,12 +32,6 @@ module.exports = (phase) => {
       if (isStaging) return ''
       return 'RESTURL_SPEAKERS:not (isDev,isProd && !isStaging,isProd && isStaging)'
     })(),
-    HOST_SESSIONS: (() => {
-      if (isDev) return 'http://localhost:3000/api'
-      if (isProd) return 'https://rest-countries-one-orcin.vercel.app/api'
-      if (isStaging) return ''
-      return 'RESTURL_SESSIONS:not (isDev,isProd && !isStaging,isProd && isStaging)'
-    })(),
   }
 
   // next.config.js object
