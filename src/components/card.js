@@ -10,7 +10,11 @@ const Card =  ({src,href ,flagTitle ,flagRegion,flagPopulation,flagCapital}) => 
             initial={{opacity: 0, y:-50}}
             animate={{opacity: 1, y: 0}}
             transition={{duration: 0.5, ease: "easeInOut"}}
-            className="bg-white dark:bg-dark-element shadow-3xl rounded-lg cursor-pointer  transition hover:scale-105"
+            whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.1 },
+            }}
+            className="bg-white dark:bg-dark-element shadow-3xl rounded-lg cursor-pointer  transition hover:scale-110"
         >
         <Link href={href} >
             <motion.div 
@@ -24,7 +28,7 @@ const Card =  ({src,href ,flagTitle ,flagRegion,flagPopulation,flagCapital}) => 
                 width={1000}
                 height={1000}
                 priority
-                className='object-cover h-48 w-96 rounded-t-lg'
+                className='object-cover h-[10rem] w-96 rounded-t-lg'
             />
             </motion.div>
             <div className="py-10 px-4 space-y-4 ">

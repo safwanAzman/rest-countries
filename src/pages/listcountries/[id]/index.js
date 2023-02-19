@@ -91,6 +91,10 @@ const ListCountries = ({ data }) => {
                                         initial={{opacity: 0, y:-50}}
                                         animate={{opacity: 1, y: 0}}
                                         transition={{duration: 0.5, ease: "easeInOut" ,delay:0.5}}
+                                        whileHover={{
+                                            scale: 1.1,
+                                            transition: { duration: 0.1 },
+                                        }}
                                         className="myFontLight text-sm">
                                         {item.name}
                                     </motion.h1>
